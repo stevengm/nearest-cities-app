@@ -52,9 +52,9 @@ const App = () => {
           {!!lookupCities?.length && (
             <div className="absolute top-32 right-4 w-56 p-2 bg-white rounded-md shadow-md">
               <FixedSizeList
-                height={150} // Adjust the height as needed
+                height={150}
                 itemCount={lookupCities?.length || 0}
-                itemSize={30} // Adjust the item size as needed
+                itemSize={30}
                 width={"100%"}
                 className="overflow-scroll"
               >
@@ -83,9 +83,9 @@ const App = () => {
               <AutoSizer>
                 {({ height, width }) => (
                   <FixedSizeList
-                    height={height - 40} // Adjust the height as needed
+                    height={height - 40}
                     itemCount={cities?.length}
-                    itemSize={30} // Adjust the item size as needed
+                    itemSize={30}
                     width={width}
                   >
                     {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
